@@ -48,8 +48,25 @@ No Git bash você devera utilizar os seguintes comandos:
 ```
   git init
 ```
+  
+## Subindo um repositório local para o repositório remoto (Github)
+Para fazer isso, primeiro você deve criar entrar com seu login no Github. Caso não tenha login, pode clicar [aqui](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) para fazer seu login.
 
-## Colocando seus códigos no repositório
+Feito o Login, você deve criar um novo repositório. Para isso, clique no + no canto direito em cima da tela, e novo repositório.
+Dê um nome para esse repositório, selecione a opção de adicionar um README.md, que é uma descrição do projeto.
+Confirme a criação do repositório.
+  
+Criado o novo repositorio, vamos conectar o nosso repo local, que é a pasta do projeto.
+- Para fazer isso, clique no botão verde escrito code, selecione e copie o link.
+ 
+- Abra o Git bash, e digite o comando colando o link:
+```
+  git remote add origin <link>
+```
+  
+Agora você já conectou o repo local com o repositório remoto, ou seja, o Github.
+
+## Colocando seus códigos no repositório local
 Dica: onde houver o simbolo <> voce deve digitar o que desesjar. <br>
 Conforme voce for fazendo seus códigos, você deve mostrar ao Git que eles existem e devem ser ADICIONADOS ao repositório.
 - Para adicionar os arquivos, digite o comando:
@@ -66,5 +83,9 @@ A parte <mensagem> serve para descrever o que foi feito naquele momento, por exe
   
 Agora você já tem seu repositório local criado, vamos subir ele para o Github, que é uma forma de disponibilizar o nosso código para o mundo.
   
-## Subindo um repositório para o Github
-Para fazer isso, primeiro você deve criar seu login no Github. Para facilitar, pode clicar [aqui](
+- Para subir seus códigos do repositório local para o Github, digite o comando:
+```
+  git push origin master
+```
+  
+# Pronto :). Agora você já sabe usar o Git e o Github
